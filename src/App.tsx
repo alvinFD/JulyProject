@@ -6,7 +6,7 @@ import CatagoryList from './CatagoryList'
 import ItemList from './ItemList'
 import ItemDetail from './ItemDetail'
 
-
+//teting
 const Stack = createNativeStackNavigator();
 
 const MyStack = () => {

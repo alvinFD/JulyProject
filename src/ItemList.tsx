@@ -1,8 +1,12 @@
 import React from 'react';
-import { View, Text, Image, ScrollView, Alert, TouchableOpacity, FlatList } from 'react-native';
-import {Styles} from './Styles';
+import { View, Text, TouchableOpacity, FlatList } from 'react-native';
+import { useNavigation, useRoute } from "@react-navigation/native"
 
-function ItemList({route, navigation}) {
+
+const ItemList = () => {
+  const navigation = useNavigation()
+  const route = useRoute()
+
   const { item_List } = route.params;
   //Alert.alert(typeof(item_List))
   //Alert.alert(JSON.stringify(item_List))

@@ -1,8 +1,10 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, Alert } from 'react-native';
 import {Styles} from './Styles';
+import {useRoute} from "@react-navigation/native"
 
-function ItemDetail({ route }) {
+function ItemDetail() {
+  const route = useRoute()
   const { item_detail } = route.params;
   return (
     <ScrollView contentContainerStyle={Styles.container}>

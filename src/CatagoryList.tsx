@@ -1,10 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import {ActivityIndicator, Alert, FlatList, Text, TouchableOpacity, View} from 'react-native';
-import { Assignment, Categorylist, Itemlist, Namelist} from './Styles';
+import {Text, TouchableOpacity, View} from 'react-native';
+import { Assignment} from './Styles';
+import { useNavigation } from "@react-navigation/core";
 
-const CatagoryList = ({navigation}) => {
-  const [isLoading, setLoading] = useState(true);
+
+const CatagoryList = () => {
+  const [, setLoading] = useState(true);
   const [data, setData] = useState<Assignment[]>([]);
+  const navigation = useNavigation()
 
   const getAssignment = async () => {
     try {

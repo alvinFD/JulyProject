@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import {TextInput, View, Button, Text, Alert} from "react-native";
+import { useNavigation } from "@react-navigation/core";
 
 let arr= [["Alvin","Alvin"]]
-const SignIn = ({ navigation }) =>{
+const SignIn = () =>{
 
     const [userid, setuserid] = useState('');
     const [password, setpassword] = useState('');
+    const navigation = useNavigation()
 
 
     function handleSignIn() {
