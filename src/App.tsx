@@ -1,10 +1,11 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import SignIn from './SignIn'
-import CatagoryList from './CatagoryList'
-import ItemList from './ItemList'
-import ItemDetail from './ItemDetail'
+import SignIn from './pages/SignIn'
+import CatagoryList from './pages/CatagoryList'
+import ItemList from './pages/ItemList'
+import ItemDetail from './pages/ItemDetail'
+
 
 //teting
 const Stack = createNativeStackNavigator();

@@ -12,7 +12,7 @@ const SignIn = () =>{
 
     function handleSignIn() {
         if (userid.trim() === '' || password.trim() === ''){
-            Alert.alert('Input is empty!')}
+            Alert.alert('Input is empty!');return}
         for (let i =0; i<arr.length;i++){
             if (userid===arr[i][0]){
                 if (password===arr[i][1]){
@@ -34,7 +34,7 @@ const SignIn = () =>{
             }
         }arr.push([userid,password])
         Alert.alert('SignUp Successfully')
-        Alert.alert(JSON.stringify(arr));return
+        //Alert.alert(JSON.stringify(arr));return
     };
 
 

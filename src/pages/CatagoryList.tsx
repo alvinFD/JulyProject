@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
-import { Assignment} from './Styles';
+import { Assignment} from '../styles/fonts';
 import { useNavigation } from "@react-navigation/core";
 
 
